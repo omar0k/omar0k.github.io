@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <a href=DSProj.html class="gradient-button gradient-button-1">Code/Notebook</a><br />
+
+  <style>
+    .gradient-button {
+      margin: 10px;
+      font-family: "Arial Black", Gadget, sans-serif;
+      font-size: 19px;
+      padding: 35px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: #FFF;
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      width: 200px;
+      top: 5%;
+      left: 45%;
+      position: absolute;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 25px;
+    }
+
+    .gradient-button:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      margin: 8px 10px 12px;
+    }
+
+    .gradient-button-1 {
+      background-image: linear-gradient(to right, #ff0000 0%, #F7BB97 51%, #0226f5 100%)
+    }
+
+    .gradient-button-1:hover {
+      background-position: right center;
+    }
+
+    body {
+      background-image: url('./Citibikes-NYC-916126092.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+
+    }
+
+    h1 {
+      background: rgb(255, 0, 0);
+      background: repeating-linear-gradient(45deg,
+          #bc6060,
+          #606dbc 10px,
+          #468598 10px,
+          #465298 20px);
+      color: rgb(131, 11, 11);
+      font-family: 'Times New Roman', "Times", serif;
+      position: absolute;
+      left: 25%;
+      top: 10%;
+      font-weight: bold;
+      font-size: 1in
+    }
+
+    p {
+      color: #0226f5;
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citi Bike Data</title>
+
+</head>
+
+<body>
+  <h1><strong> NYC Runs On Citi Bikes</strong></h1>
+  <p style="position: absolute; top: 30%;font-size: .65cm;color: black;background-color: #2370ecaf;font-weight: bold;">
+    <u> Overview:</u> I wanted to learn more about Citi Bike's data and I was thinking that they have become
+    <br>
+    very popular in recent years and their usage have increased drastically over time. I used the data that <br>
+    is provided by Citi Bike and i used it to see how frequently are their bikes used and in what days are they <br>
+    used the most in and which are the most popular stations. It was surprising to see the amount of Citi Bikes that
+    get used daily and yearly
+  </p>
+  <p style="position: absolute; top: 50%;font-size: .6cm;color: black;background-color: #2370ecaf;font-weight: bold;">
+    <u>Data:</u> I only used one dataset from Citi Bike and it was the data from the month of June in the year
+    2020. <br>
+    The data had features like which station the bike started at and ended at and what time it started and the time <br>
+    it ended. Those in my opinion were the most important features out of the dataset. Although the data was already
+    <br>
+    well-kept, I wanted to look at the data and group them based on the borough of the station but my approaches either
+    <br>
+    took way too long to execute, using geopy, or did not work at all.
+  </p>
+  <p style="position: absolute; top: 80%;font-size: .6cm;color: black;background-color: #2370ecaf;font-weight: bold;">
+    <u>Techniques:</u> I used mostly pandas since i needed to work with the data frame and i was able to
+    display and group the data <br>
+    based on what I needed. I was able to use datetime to covnert the timestamps in the dataset and extract the <br>
+    day of the week from them. Seaborn and Matplotlib were very useful in plotting the data that wanted to show <br>
+    and made the graphs look presentable. Seaborn's visualization was very impressive and it definitely mad things a
+    lot
+    <br>
+    easier.
+  </p>
+  <img style="position: absolute; top: 27%;left: 70%;" src="./output.png" alt="0">
+  <img style="position: absolute; top: 70%;left: 70%;" src="./output2.png" alt="">
+  <img style="position: absolute; top: 110%;left: 70%;" src="./output3.png" alt="">
+</body>
+
+</html>
